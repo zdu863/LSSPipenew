@@ -1,0 +1,6 @@
+Executing stage: WLGCTwoPoint
+    WLGCTwoPoint reading from ./test/outputs/tomography_catalog.txt
+    WLGCTwoPoint reading from ./test/outputs/shear_catalog.txt
+    WLGCTwoPoint reading from ./test/outputs/diagnostic_maps.txt
+    WLGCTwoPoint reading from ./test/outputs/random_catalog.txt
+    WLGCTwoPoint writing to ./test/outputs/twopoint_data.txt

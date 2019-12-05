@@ -1,0 +1,105 @@
+2019-12-04 18:27:34 parsl.dataflow.rundirs:44 [DEBUG]  Parsl run initializing in rundir:./runinfo/000
+2019-12-04 18:27:34 parsl.utils:24 [ERROR]  Unable to determine code state
+Traceback (most recent call last):
+  File "/global/homes/z/zdu863/.conda/envs/py36/lib/python3.6/site-packages/parsl-0.5.2-py3.6.egg/parsl/utils.py", line 19, in get_version
+    head = subprocess.check_output(cmd, env=env).strip().decode('utf-8')
+  File "/global/homes/z/zdu863/.conda/envs/py36/lib/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/global/homes/z/zdu863/.conda/envs/py36/lib/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', 'rev-parse', '--short', 'HEAD']' returned non-zero exit status 128.
+2019-12-04 18:27:34 parsl.dataflow.dflow:77 [INFO]  Parsl version: 0.5.2
+2019-12-04 18:27:34 parsl.dataflow.dflow:78 [INFO]  Libsubmit version: 0.4.0
+2019-12-04 18:27:34 parsl.dataflow.config_defaults:19 [DEBUG]  { 'controller': {'mode': 'auto'},
+  'globals': { 'appCache': True,
+               'checkpoint': None,
+               'checkpointFiles': None,
+               'checkpointPeriod': None,
+               'lazyErrors': True,
+               'strategy': 'simple',
+               'usageTracking': True},
+  'mpi_command': 'mpirun -n',
+  'sites': [ { 'auth': {'channel': None},
+               'execution': { 'block': { 'initBlocks': 0,
+                                         'maxBlocks': 10,
+                                         'minBlocks': 0,
+                                         'nodes': 1,
+                                         'options': {},
+                                         'parallelism': 0.75,
+                                         'taskBlocks': 1,
+                                         'walltime': '00:20:00'},
+                              'container': {'image': None, 'type': None},
+                              'executor': 'threads',
+                              'maxThreads': 4,
+                              'provider': None,
+                              'scriptDir': '/global/u2/z/zdu863/gitrepos/LSSPipenew/runinfo/000'},
+               'site': 'Local_Threads'}]}
+2019-12-04 18:27:34 parsl.dataflow.usage_tracking.usage:112 [DEBUG]  Tracking status: True
+2019-12-04 18:27:34 parsl.dataflow.usage_tracking.usage:113 [DEBUG]  Testing mode   : False
+2019-12-04 18:27:34 parsl.dataflow.memoization:60 [INFO]  App caching initialized
+2019-12-04 18:27:34 parsl.execution_provider.provider_factory:76 [DEBUG]  Constructing site : Local_Threads 
+2019-12-04 18:27:34 parsl.execution_provider.provider_factory:91 [DEBUG]  Created channel : None
+2019-12-04 18:27:34 parsl.execution_provider.provider_factory:104 [DEBUG]  Created execution_provider : None
+2019-12-04 18:27:34 parsl.execution_provider.provider_factory:135 [DEBUG]  Created executor : <parsl.executors.threads.ThreadPoolExecutor object at 0x2aaab0da4198>
+2019-12-04 18:27:34 parsl.dataflow.strategy:119 [DEBUG]  Scaling strategy: simple
+2019-12-04 18:27:34 parsl.dataflow.dflow:143 [DEBUG]  Using executors: {'Local_Threads': <parsl.executors.threads.ThreadPoolExecutor object at 0x2aaab0da4198>}
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 0 submitted for App remote_side_bash_executor, waiting on tasks []
+2019-12-04 18:27:34 parsl.dataflow.dflow:331 [INFO]  Task 0 launched on site Local_Threads
+2019-12-04 18:27:34 parsl.dataflow.dflow:513 [DEBUG]  Task 0 launched with AppFut:<AppFuture at 0x2aaab0da4f28 state=running>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0da4f28 state=running>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/diagnostic_maps.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 1 submitted for App remote_side_bash_executor, waiting on tasks []
+2019-12-04 18:27:34 parsl.dataflow.dflow:331 [INFO]  Task 1 launched on site Local_Threads
+2019-12-04 18:27:34 parsl.dataflow.dflow:513 [DEBUG]  Task 1 launched with AppFut:<AppFuture at 0x2aaab0d8e9e8 state=running>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0d8e9e8 state=running>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/shear_catalog.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 2 submitted for App remote_side_bash_executor, waiting on tasks []
+2019-12-04 18:27:34 parsl.dataflow.dflow:331 [INFO]  Task 2 launched on site Local_Threads
+2019-12-04 18:27:34 parsl.dataflow.dflow:513 [DEBUG]  Task 2 launched with AppFut:<AppFuture at 0x2aaab0d8ee80 state=running>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0d8ee80 state=running>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/photoz_pdfs.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 3 submitted for App remote_side_bash_executor, waiting on tasks [0]
+2019-12-04 18:27:34 parsl.dataflow.dflow:537 [DEBUG]  Task 3 launched with AppFut:<AppFuture at 0x2aaab0d8ea90 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0d8ea90 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/random_catalog.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 4 submitted for App remote_side_bash_executor, waiting on tasks [1, 2]
+2019-12-04 18:27:34 parsl.dataflow.dflow:537 [DEBUG]  Task 4 launched with AppFut:<AppFuture at 0x2aaab0d8e240 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0d8e240 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/tomography_catalog.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 5 submitted for App remote_side_bash_executor, waiting on tasks [4, 2, 0]
+2019-12-04 18:27:34 parsl.dataflow.dflow:537 [DEBUG]  Task 5 launched with AppFut:<AppFuture at 0x2aaab0da91d0 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0da91d0 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/source_summary_data.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 6 submitted for App remote_side_bash_executor, waiting on tasks [4, 1, 0, 3]
+2019-12-04 18:27:34 parsl.dataflow.dflow:537 [DEBUG]  Task 6 launched with AppFut:<AppFuture at 0x2aaab0da9278 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0da9278 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/twopoint_data.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 7 submitted for App remote_side_bash_executor, waiting on tasks [4, 1, 5, 0]
+2019-12-04 18:27:34 parsl.dataflow.dflow:537 [DEBUG]  Task 7 launched with AppFut:<AppFuture at 0x2aaab0da9438 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0da9438 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/covariance.txt
+2019-12-04 18:27:34 parsl.dataflow.dflow:491 [INFO]  Task 8 submitted for App remote_side_bash_executor, waiting on tasks [6, 7, 5]
+2019-12-04 18:27:34 parsl.dataflow.dflow:537 [DEBUG]  Task 8 launched with AppFut:<AppFuture at 0x2aaab0da9588 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:95 [DEBUG]  Creating DataFuture with parent : <AppFuture at 0x2aaab0da9588 state=pending>
+2019-12-04 18:27:34 parsl.app.futures:96 [DEBUG]  Filepath : ./test/outputs/wlgc_summary_data.txt
+2019-12-04 18:27:35 parsl.dataflow.strategy:155 [DEBUG]  Site:Local_Threads Status:STATIC
+2019-12-04 18:27:36 parsl.dataflow.dflow:216 [INFO]  Task 1 completed
+2019-12-04 18:27:36 parsl.dataflow.dflow:216 [INFO]  Task 0 completed
+2019-12-04 18:27:36 parsl.dataflow.dflow:331 [INFO]  Task 3 launched on site Local_Threads
+2019-12-04 18:27:36 parsl.dataflow.dflow:216 [INFO]  Task 2 completed
+2019-12-04 18:27:36 parsl.dataflow.dflow:331 [INFO]  Task 4 launched on site Local_Threads
+2019-12-04 18:27:37 parsl.dataflow.dflow:216 [INFO]  Task 3 completed
+2019-12-04 18:27:37 parsl.dataflow.dflow:216 [INFO]  Task 4 completed
+2019-12-04 18:27:37 parsl.dataflow.dflow:331 [INFO]  Task 5 launched on site Local_Threads
+2019-12-04 18:27:37 parsl.dataflow.dflow:331 [INFO]  Task 6 launched on site Local_Threads
+2019-12-04 18:27:39 parsl.dataflow.dflow:216 [INFO]  Task 6 completed
+2019-12-04 18:27:39 parsl.dataflow.dflow:216 [INFO]  Task 5 completed
+2019-12-04 18:27:39 parsl.dataflow.dflow:331 [INFO]  Task 7 launched on site Local_Threads
+2019-12-04 18:27:40 parsl.dataflow.strategy:155 [DEBUG]  Site:Local_Threads Status:STATIC
+2019-12-04 18:27:40 parsl.dataflow.dflow:216 [INFO]  Task 7 completed
+2019-12-04 18:27:40 parsl.dataflow.dflow:331 [INFO]  Task 8 launched on site Local_Threads
+2019-12-04 18:27:42 parsl.dataflow.dflow:216 [INFO]  Task 8 completed
+2019-12-04 18:27:42 parsl.dataflow.dflow:551 [INFO]  DFK cleanup initiated
+2019-12-04 18:27:42 parsl.dataflow.dflow:570 [INFO]  Terminating flow_control and strategy threads
+2019-12-04 18:27:42 parsl.executors.threads:93 [DEBUG]  Done with executor shutdown
+2019-12-04 18:27:42 parsl.dataflow.dflow:581 [INFO]  DFK cleanup complete

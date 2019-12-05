@@ -1,0 +1,5 @@
+Executing stage: SourceSummarizer
+    SourceSummarizer reading from ./test/outputs/tomography_catalog.txt
+    SourceSummarizer reading from ./test/outputs/photoz_pdfs.txt
+    SourceSummarizer reading from ./test/outputs/diagnostic_maps.txt
+    SourceSummarizer writing to ./test/outputs/source_summary_data.txt

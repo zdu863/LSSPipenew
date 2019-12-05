@@ -1,0 +1,7 @@
+Executing stage: WLGCCov
+    WLGCCov rank 0/1 reading from ./test/inputs/fiducial_cosmology.txt
+    WLGCCov rank 0/1 reading from ./test/outputs/tomography_catalog.txt
+    WLGCCov rank 0/1 reading from ./test/outputs/shear_catalog.txt
+    WLGCCov rank 0/1 reading from ./test/outputs/source_summary_data.txt
+    WLGCCov rank 0/1 reading from ./test/outputs/diagnostic_maps.txt
+    WLGCCov rank 0/1 writing to ./test/outputs/covariance.txt

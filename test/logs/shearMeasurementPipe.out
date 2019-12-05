@@ -1,0 +1,4 @@
+Executing stage: shearMeasurementPipe
+Here is my configuration : {'metacalibration': True, 'apply_flag': False}
+    shearMeasurementPipe reading from ./test/inputs/dm.txt
+    shearMeasurementPipe writing to ./test/outputs/shear_catalog.txt

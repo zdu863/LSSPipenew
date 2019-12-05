@@ -1,0 +1,3 @@
+Executing stage: WLGCRandoms
+    WLGCRandoms reading from ./test/outputs/diagnostic_maps.txt
+    WLGCRandoms writing to ./test/outputs/random_catalog.txt

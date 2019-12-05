@@ -1,0 +1,5 @@
+Executing stage: WLGCSummaryStatistic
+    WLGCSummaryStatistic reading from ./test/outputs/twopoint_data.txt
+    WLGCSummaryStatistic reading from ./test/outputs/covariance.txt
+    WLGCSummaryStatistic reading from ./test/outputs/source_summary_data.txt
+    WLGCSummaryStatistic writing to ./test/outputs/wlgc_summary_data.txt

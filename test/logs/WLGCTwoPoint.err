@@ -1,0 +1,2 @@
+/global/homes/z/zdu863/.conda/envs/py36/lib/python3.6/site-packages/ceci-0.0.7-py3.6.egg/ceci/stage.py:209: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  overall_config = yaml.load(open(self.get_input('config')))

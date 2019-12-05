@@ -1,0 +1,4 @@
+Executing stage: PZEstimationPipe
+    PZEstimationPipe reading from ./test/inputs/dm.txt
+    PZEstimationPipe reading from ./test/inputs/fiducial_cosmology.txt
+    PZEstimationPipe writing to ./test/outputs/photoz_pdfs.txt

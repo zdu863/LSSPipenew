@@ -1,0 +1,5 @@
+Executing stage: WLGCSelector
+{'zbin_edges': [0.2, 0.3, 0.5], 'ra_range': [-5, 5], 'metacalibration': True}
+    WLGCSelector reading from ./test/outputs/shear_catalog.txt
+    WLGCSelector reading from ./test/outputs/photoz_pdfs.txt
+    WLGCSelector writing to ./test/outputs/tomography_catalog.txt

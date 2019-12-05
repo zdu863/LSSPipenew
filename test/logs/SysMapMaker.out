@@ -1,0 +1,3 @@
+Executing stage: SysMapMaker
+    SysMapMaker reading from ./test/inputs/dm.txt
+    SysMapMaker writing to ./test/outputs/diagnostic_maps.txt
